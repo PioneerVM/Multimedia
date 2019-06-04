@@ -1,1 +1,1 @@
-include ':main', ':News', ':Charts', ':Video', ':Personal'
+include ':Main', ':News', ':Charts', ':Video', ':Personal'
