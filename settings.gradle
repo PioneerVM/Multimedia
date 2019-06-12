@@ -1,1 +1,1 @@
-include ':Main', ':News', ':Charts', ':Video', ':Personal', ':BaseLibrary', ':NetLibrary', ':ImageLibrary', ':UILibrary', ':Login', ':Splash'
+include ':app', ':News', ':Charts', ':Video', ':Personal', ':BaseLibrary', ':NetLibrary', ':ImageLibrary', ':UILibrary', ':Login', ':Splash', ':Main'
