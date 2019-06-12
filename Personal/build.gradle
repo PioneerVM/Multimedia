@@ -16,6 +16,12 @@ android {
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+
     }
 
     buildTypes {
@@ -47,4 +53,7 @@ dependencies {
     implementation project(':ImageLibrary')
     implementation project(':NetLibrary')
     implementation project(':UILibrary')
+
+    ///集成模式下需要编译器生成路由通信的代码
+    annotationProcessor rootProject.ext.dependencies.arouter_compiler
 }

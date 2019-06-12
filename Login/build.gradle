@@ -16,6 +16,13 @@ android {
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+                includeCompileClasspath true
+            }
+        }
+
     }
 
     buildTypes {
@@ -27,7 +34,7 @@ android {
 
     sourceSets {
         main {
-            if (rootProject.ext.isVideo) {
+            if (rootProject.ext.isLogin) {
                 manifest.srcFile 'src/main/AndroidManifest.xml'
             }
         }
@@ -47,4 +54,9 @@ dependencies {
     implementation project(':ImageLibrary')
     implementation project(':NetLibrary')
     implementation project(':UILibrary')
+
+    // arouter 依赖
+    implementation rootProject.ext.dependencies.arouter_api
+    //集成模式下需要编译器生成路由通信的代码
+    annotationProcessor rootProject.ext.dependencies.arouter_compiler
 }
