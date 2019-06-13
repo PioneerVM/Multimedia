@@ -4,8 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
+import com.xinxin.baselib.arouter.ARouterManager;
 
-@Route(path = "/main/HomeActivity")
+@Route(path = ARouterManager.MAIN_HOME_ACTIVITY)
 public class HomeActivity extends AppCompatActivity {
 
     @Override

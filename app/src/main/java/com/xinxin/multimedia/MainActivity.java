@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.xinxin.baselib.arouter.ARouterManager;
+import com.xinxin.baselib.arouter.ARouterUtils;
 
 public class MainActivity extends Activity {
 
@@ -24,7 +26,7 @@ public class MainActivity extends Activity {
                     @Override
                     public void run() {
                         //无参数
-                        ARouter.getInstance().build("/main/HomeActivity").navigation();
+                        ARouterUtils.navigationWithNoParams(ARouterManager.MAIN_HOME_ACTIVITY);
                         finish();
                     }
                 });
