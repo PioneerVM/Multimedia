@@ -38,13 +38,13 @@ task clean(type: Delete) {
 }
 
 ext {
-    isMain = true
-    isNews = true
-    isCharts = true
-    isVideo = true
-    isPersonal = true
+    isMain = false
+    isNews = false
+    isCharts = false
+    isVideo = false
+    isPersonal = false
     isLogin = false
-    isSplash = true
+    isSplash = false
 
     compileSdkVersion = 28
     minSdkVersion = 14

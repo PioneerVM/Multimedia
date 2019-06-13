@@ -42,6 +42,10 @@ dependencies {
     implementation project(':NetLibrary')
     implementation project(':UILibrary')
 
+    if(!rootProject.ext.isMain){
+        implementation project(':Main')
+    }
+
     if(!rootProject.ext.isNews){
         implementation project(':News')
     }
@@ -62,6 +66,8 @@ dependencies {
     if(!rootProject.ext.isSplash){
         implementation project(':Splash')
     }
+
+
 
 
 }
