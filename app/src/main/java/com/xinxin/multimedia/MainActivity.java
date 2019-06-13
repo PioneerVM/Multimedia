@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //无参数
-                ARouter.getInstance().build("/home/AActivity") .navigation();
+                ARouter.getInstance().build("/home/LoginActivity") .navigation();
             }
         });
     }

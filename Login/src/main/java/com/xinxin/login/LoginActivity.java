@@ -5,12 +5,12 @@ import android.os.Bundle;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 
-@Route(path = "/home/AActivity", extras = 1)
-public class MainActivity extends AppCompatActivity {
+@Route(path = "/home/LoginActivity")
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.login_activity_main);
     }
 }
