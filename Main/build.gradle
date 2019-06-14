@@ -36,6 +36,8 @@ android {
         main {
             if (rootProject.ext.isNews) {
                 manifest.srcFile 'src/main/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/release/AndroidManifest.xml'
             }
         }
     }

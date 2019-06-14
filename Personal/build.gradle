@@ -35,6 +35,8 @@ android {
         main {
             if (rootProject.ext.isPersonal) {
                 manifest.srcFile 'src/main/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/release/AndroidManifest.xml'
             }
         }
     }

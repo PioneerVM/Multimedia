@@ -17,10 +17,28 @@ android {
             }
         }
     }
+
+    signingConfigs {
+        release {
+            //需要重新配置插件的签名文件
+            storeFile new File("${project.projectDir}/music_news.jks")
+            storePassword 'ydm123456'
+            keyAlias 'ydm'
+            keyPassword 'ydm123456'
+        }
+    }
+
     buildTypes {
+        debug {
+            debuggable true
+            signingConfig signingConfigs.release
+        }
         release {
             minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 }
