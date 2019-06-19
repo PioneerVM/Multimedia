@@ -25,7 +25,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
 }
 
 dependencies {
@@ -37,4 +36,11 @@ dependencies {
 
     // arouter 依赖
     api rootProject.ext.dependencies.arouter_api
+
+    // Architecture components
+    api rootProject.ext.dependencies.lifecycle_runtime
+    api rootProject.ext.dependencies.lifecycle_extensions
+    api rootProject.ext.dependencies.lifecycle_compiler
+    //annotationProcessor deps.room.compiler
+
 }
