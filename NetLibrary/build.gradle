@@ -25,4 +25,12 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //only Retrofit（只用Retrofit联网）
+    api rootProject.ext.dependencies.retrofit
+    api rootProject.ext.dependencies.retrofit_converter_gson
+    //Rxjava and Retrofit（Retrofit+Rx需要添加的依赖）
+    api rootProject.ext.dependencies.retrofit_adapter_rxjava2
+    api rootProject.ext.dependencies.rxjava2
+    api rootProject.ext.dependencies.rxjava2_android
 }

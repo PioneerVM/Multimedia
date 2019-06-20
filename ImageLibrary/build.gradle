@@ -25,4 +25,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //gilde
+    api rootProject.ext.dependencies.glide
 }

@@ -49,6 +49,10 @@ dependencies {
     implementation rootProject.ext.dependencies.arouter_api
     //集成模式下需要编译器生成路由通信的代码
     annotationProcessor rootProject.ext.dependencies.arouter_compiler
+    annotationProcessor rootProject.ext.dependencies.lifecycle_compiler
+    annotationProcessor rootProject.ext.dependencies.dagger2_compiler
+    annotationProcessor rootProject.ext.dependencies.room_compiler
+
 
     implementation rootProject.ext.dependencies.appcompatV7
     testImplementation rootProject.ext.dependencies.junit
